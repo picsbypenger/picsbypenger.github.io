@@ -1,4 +1,4 @@
 ---
 tag: albums
-permalink: "/category/albums"
+permalink: "/category/gallery"
 ---
