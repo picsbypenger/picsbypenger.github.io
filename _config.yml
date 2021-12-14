@@ -1,4 +1,4 @@
-name: unfiltrd
+name: picsbypenger
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 collections:
