@@ -1,0 +1,17 @@
+---
+layout: default
+title: directory
+---
+<h1 style="color:#ed8756">{{ page.title }}</h1>
+<ul class="posts">
+<div class="directoryimg">
+    <img src="/images/usc.jpg" alt="pss">
+</div>
+    {% for post in site.posts %}
+
+    <li><span class="serif">{{ post.date | date_to_string }}</span> »
+        <a href="{{ post.url }}" title="{{ post.title }}" class="serif" style="color: #ed8765;">{{ post.title
+            }}</a>
+    </li>
+    {% endfor %}
+</ul>

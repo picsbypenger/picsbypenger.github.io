@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="/images/faviconcircle.png" />
+    <!-- link to main stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/category/albums">albums</a></li>
+                <li><a href="/category/articles">articles</a></li>
+                <li><a href="/directory">directory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <ul>
+            <li></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
