@@ -314,7 +314,8 @@ pre code {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 1%;
+    grid-row-gap: .95%;
+    grid-column-gap: .55%;
     margin-bottom: 7%;
 }
 
