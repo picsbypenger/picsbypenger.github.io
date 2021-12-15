@@ -9,4 +9,4 @@ author: "Derek Peng"
 
 ![PSS](/images/2021boysgolf.jpg)
 
-Inspired by Tiger.
+Tiger-esque.
