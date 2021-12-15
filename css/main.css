@@ -75,7 +75,7 @@ a:hover {
 }
 
 h1 a {
-    color:black
+    color:var(--text)
 }
 
 h1 a:hover {
