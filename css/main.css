@@ -165,9 +165,10 @@ img+em {
 }
 
 .bio {
-    font-family: var(--sans-font);
+    font-family: var(--serif-font);
     font-size: 3em;
-    font-weight: bold;
+    font-weight: normal;
+    font-style: italic;
     padding-bottom: 10px;
 }
 
