@@ -3,7 +3,7 @@ title: "Psithurism"
 layout: "post" 
 date: "2021-10-13"
 categories: 
-    - "albums"
+    - "editorial"
 camera: "Canon 5D Mk. II"
 date_taken: "2020-07-30"
 ---

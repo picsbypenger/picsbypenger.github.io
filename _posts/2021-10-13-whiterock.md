@@ -3,7 +3,7 @@ title: "Whiterock"
 layout: "post" 
 date: "2021-10-13"
 categories: 
-    - "albums"
+    - "scapes"
 camera: "Canon 5D Mk. II"
 date_taken: "2020-09-06"
 ---

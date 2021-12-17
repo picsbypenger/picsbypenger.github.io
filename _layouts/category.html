@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="blog list">
-    {% if page.tag == "albums" %}
+    {% if page.tag == "editorial" %}
     <h1 style="color: var(--albums-title-color);">{{ page.tag }}</h1>
-    {% elsif page.tag == "articles" %}
+    {% elsif page.tag == "scapes" %}
     <h1 style="color: #4C6A92;">{{ page.tag }}</h1>
     {% endif %}
 
     {% for post in site.categories[page.tag] %}
     <article>
         <header>
-            {% if post.categories contains "albums" %}
+            {% if post.categories contains "scapes" or "editorial" or "designs" %}
             <div class="title">{{ post.title }}</div>
             <div class="date_taken">{{ post.date_taken }}</div>
             <div class="camera">{{ post.camera }}</div>

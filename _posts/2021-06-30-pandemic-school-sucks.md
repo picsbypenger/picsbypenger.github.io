@@ -3,7 +3,7 @@ title: "Pandemic School Sucks"
 layout: "post"
 date: "2021-06-30"
 categories: 
-    - "articles"
+    - "designs"
 author: "Derek Peng"
 ---
 

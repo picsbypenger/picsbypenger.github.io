@@ -3,7 +3,7 @@ title: "Pebble Beach"
 layout: "post" 
 date: "2021-01-07"
 categories: 
-    - "albums"
+    - "scapes"
 camera: "Canon 5D Mk. II"
 date_taken: "2019-12-23"
 ---

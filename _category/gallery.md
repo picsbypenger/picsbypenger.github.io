@@ -1,4 +1,0 @@
----
-tag: gallery
-permalink: "/gallery"
----
