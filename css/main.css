@@ -14,7 +14,7 @@
     --accent: #999;
     --accent-light: #90CAF9;
     --code: #D81B60;
-    --albums-title-color: #97c599;
+    /* --albums-title-color: #97c599; */
 }
 
 
@@ -30,13 +30,24 @@
         --accent: #ffeea0d7;
         --accent-light: #ffeea0;
         --code: #F06292;
-        --albums-title-color: #97c599;
+        /* --albums-title-color: #97c599; */
     }
     img {
         opacity: .75;
     }
 }
 
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.fade {
+    -webkit-mask-image: linear-gradient(90deg, #000 60%, transparent);
+  }
 .serif {
     font-family: var(--serif-font);
 }
@@ -85,11 +96,12 @@ nav a {
     color: #999;
 }
 
+
 h1 {
     font-family: var(--serif-font);
-    font-size: 4.5em;
+    font-size : clamp(2rem, 10vw, 5rem);
 }
-
+    
 p {
     font-family: var(--serif-font);
     font-size: 1.5em;
