@@ -36,7 +36,9 @@
         opacity: .75;
     }
 }
-
+img {
+    object-fit: cover;
+}
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
@@ -330,7 +332,7 @@ pre code {
     grid-template-rows: repeat(8, 5vw);
     grid-row-gap: .95%;
     grid-column-gap: .55%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 }
 
 .gallery__img {
