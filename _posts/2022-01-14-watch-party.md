@@ -1,11 +1,11 @@
 ---
-title: "Stargazing"
+title: "Watch Party"
 layout: "post" 
 date: "2022-01-14"
 categories: 
     - "editorial"
 camera: "Canon 5D Mk. II"
-date_taken: "2021-10-17"
+date_taken: "2021-11-20"
 ---
 
-![Under the starry night](/images/stargazing.jpg)
+![backstage watch party](/images/watchparty.jpg)
