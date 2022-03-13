@@ -1,5 +1,5 @@
 ---
-title: "Stargazing"
+title: "Beyond the City Lights"
 layout: "post" 
 date: "2022-01-14"
 categories: 
