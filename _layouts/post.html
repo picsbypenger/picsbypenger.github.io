@@ -10,6 +10,10 @@ layout: default
             <div class="title">{{ page.title }}</div>
             <div class="date_taken">{{ page.date_taken }}</div>
             <div class="camera">{{ page.camera }}</div>
+            {% elsif page.categories contains "photo1" %}
+            <div class="title">Photography 1</div>
+            <div class="date_taken">{{ page.date_taken }}</div>
+            <div class="camera">{{ page.camera }}</div>
             {% elsif page.categories contains "articles" %}
             <div class="title">{{ page.title }}</div>
             <div class="author">By {{ page.author }}</div>
