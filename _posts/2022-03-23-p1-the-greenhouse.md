@@ -1,6 +1,6 @@
 ---
 title: "The Greenhouse"
-layout: "post" 
+layout: "default" 
 date: "2022-03-23"
 categories: 
     - "photo1"
