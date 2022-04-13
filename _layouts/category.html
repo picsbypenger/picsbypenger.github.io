@@ -9,15 +9,10 @@ layout: default
     <h1 style="color: #97c599;">{{ page.tag }}</h1>
     {% elsif page.tag == "designs" %}
     <h1 style="color: #738daf;">{{ page.tag }}</h1>
-
-    {% elsif page.tag == "photo1" %}
-    <h1 style="color: #090a0b;">PHOTOGRAPHY I</h1>
-    {% endif %}
-
     {% for post in site.categories[page.tag] %}
     <article>
         <header>
-            {% if post.categories contains "scapes" or "editorial" or "designs" or "photo1" %}
+            {% if post.categories contains "scapes" or "editorial" or "designs" %}
             <div class="title">{{ post.title }}</div>
             <div class="date_taken">{{ post.date_taken }}</div>
             <div class="camera">{{ post.camera }}</div>
