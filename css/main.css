@@ -410,3 +410,14 @@ pre code {
 .directoryimg {
     margin-bottom: 4%;
 }
+
+.medium {
+    font-family: var(--serif-font);
+    font-style: italic;
+    font-size: small;
+}
+.size {
+    font-family: var(--serif-font);
+    font-style: italic;
+    font-size: small;
+}
