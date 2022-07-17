@@ -72,7 +72,7 @@ nav ul,
 footer ul {
     font-family: var(--serif-font);
     padding: 0px;
-    padding-right: 75px;
+    padding-right: 0px;
     list-style: none;
     font-weight: normal;
 }
