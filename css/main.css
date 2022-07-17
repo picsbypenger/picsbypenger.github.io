@@ -333,6 +333,7 @@ pre code {
     grid-row-gap: .95%;
     grid-column-gap: .55%;
     margin-bottom: 10%;
+    margin-left: 0px;
 }
 
 .gallery__img {

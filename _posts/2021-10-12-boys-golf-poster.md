@@ -1,5 +1,5 @@
 ---
-title: "2021 Boys Golf Poster"
+title: "2021 AHS GOLF"
 layout: "post"
 date: "2021-08-25"
 categories: 
