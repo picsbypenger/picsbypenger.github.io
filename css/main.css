@@ -416,26 +416,3 @@ pre code {
     margin-right: -50vw;
 }
 
-.image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.image2 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-}
-
-.image3 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.image4 {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-}
