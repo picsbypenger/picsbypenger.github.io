@@ -21,7 +21,7 @@
 /* Dark theme */
 
 @media (prefers-color-scheme: dark) {
-     :root {
+    :root {
         --bg: #212121;
         --accent-bg: #2b2b2b;
         --text: #ababab;
@@ -32,25 +32,31 @@
         --code: #F06292;
         /* --albums-title-color: #97c599; */
     }
+
     img {
         opacity: .75;
     }
 }
+
 img {
     object-fit: cover;
 }
+
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+
 .scroll::-webkit-scrollbar {
     display: none;
 }
+
 .fade {
     -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
     mask-image: linear-gradient(90deg, #000 80%, transparent);
-  }
+}
+
 .serif {
     font-family: var(--serif-font);
 }
@@ -89,22 +95,23 @@ a:hover {
 }
 
 h1 a {
-    color:var(--text)
+    color: var(--text)
 }
 
 h1 a:hover {
     text-decoration: none;
 }
+
 nav a {
-    color: #999;
+    color: rgb(153, 153, 153);
 }
 
 
 h1 {
     font-family: var(--serif-font);
-    font-size : clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 10vw, 5rem);
 }
-    
+
 p {
     font-family: var(--serif-font);
     font-size: 1.5em;
@@ -189,73 +196,73 @@ img+em {
 
 /* Format tables */
 table {
-	border-collapse: collapse;
-	width: 100%
+    border-collapse: collapse;
+    width: 100%
 }
 
 td,
 th {
-	border: 1px solid var(--border);
-	text-align: left;
-	padding: .5rem;
+    border: 1px solid var(--border);
+    text-align: left;
+    padding: .5rem;
 }
 
 th {
-	background: var(--accent-bg);
-  font-weight: bold;
+    background: var(--accent-bg);
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
-	/* Set every other cell slightly darker. Improves readability. */
-	background: var(--accent-bg);
+    /* Set every other cell slightly darker. Improves readability. */
+    background: var(--accent-bg);
 }
 
 table caption {
-	font-weight: bold;
-	margin-bottom: .5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
 }
 
 /* Misc body elements */
 
 hr {
-	color: var(--border);
-  border-top: 1px;
-	margin: 1rem auto;
+    color: var(--border);
+    border-top: 1px;
+    margin: 1rem auto;
 }
 
 mark {
-	padding: 3px 6px;
-	background: var(--accent-light);
+    padding: 3px 6px;
+    background: var(--accent-light);
 }
 
 main img {
-  max-width: 100%;
-  border-radius: 3px;
+    max-width: 100%;
+    border-radius: 3px;
 }
 
 figure {
-  margin: 0;
+    margin: 0;
 }
 
 figcaption {
-  font-size: .9rem;
-  color: var(--text-light);
-  text-align: center;
-  margin-bottom: 1rem;
+    font-size: .9rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 blockquote {
-  margin: 2rem 0 2rem 2rem;
-  padding: .4rem .8rem;
-	border-left: .35rem solid var(--accent);
-	opacity: .8;
-	font-style: italic;
+    margin: 2rem 0 2rem 2rem;
+    padding: .4rem .8rem;
+    border-left: .35rem solid var(--accent);
+    opacity: .8;
+    font-style: italic;
 }
 
 cite {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: normal;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: normal;
 }
 
 /* Use mono font for code like elements */
@@ -263,25 +270,25 @@ code,
 pre,
 kbd,
 samp {
-	font-family: var(--mono-font);
-  font-size: 1.1rem;
-  color: var(--code);
+    font-family: var(--mono-font);
+    font-size: 1.1rem;
+    color: var(--code);
 }
 
 kbd {
-  border: 1px solid var(--code);
-	border-bottom: 3px solid var(--code);
-  border-radius: 5px;
-  padding: .1rem;
+    border: 1px solid var(--code);
+    border-bottom: 3px solid var(--code);
+    border-radius: 5px;
+    padding: .1rem;
 }
 
 pre {
-	padding: 1rem 1.4rem;
-	max-width: 100%;
-	overflow: auto;
-  background: var(--accent-bg);
-  border: 1px solid var(--border);
-  border-radius: 5px;
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+    background: var(--accent-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
 }
 
 /* Fix embedded code within pre */
@@ -296,9 +303,8 @@ pre code {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    row-gap: .55%;
+    row-gap: .35%;
     column-gap: .2%;
-    margin-bottom: 10%;
     margin-left: 0px;
 }
 
@@ -314,66 +320,77 @@ pre code {
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
 .gallery__item--2 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 6;
 }
+
 .gallery__item--3 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .gallery__item--4 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 6;
 }
+
 .gallery__item--5 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 6;
 }
+
 .gallery__item--6 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .gallery__item--7 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 7;
 }
+
 .gallery__item--8 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 7;
     grid-row-end: 8;
 }
+
 .gallery__item--9 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 8;
     grid-row-end: 9;
 }
+
 .gallery__item--10 {
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .gallery__item--11 {
     grid-column-start: 8;
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .directoryimg {
     margin-bottom: 4%;
 }
@@ -383,6 +400,7 @@ pre code {
     font-style: italic;
     font-size: small;
 }
+
 .size {
     font-family: var(--serif-font);
     font-style: italic;
@@ -396,4 +414,4 @@ pre code {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-  }
+}
