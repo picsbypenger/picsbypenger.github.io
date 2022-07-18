@@ -42,7 +42,7 @@ img {
     object-fit: cover;
 }
 
-.scroll {
+/* .scroll {
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -55,7 +55,7 @@ img {
 .fade {
     -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
     mask-image: linear-gradient(90deg, #000 80%, transparent);
-}
+} */
 
 .serif {
     font-family: var(--serif-font);
@@ -65,7 +65,7 @@ body {
     color: var(--text);
     background: var(--bg);
     margin: 60px auto;
-    width: 70%;
+    width: 85%;
 }
 
 nav ul,
@@ -302,7 +302,7 @@ pre code {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(8, 5.5vw);
     row-gap: .35%;
     column-gap: .2%;
     margin-left: 0px;
@@ -415,4 +415,3 @@ pre code {
     margin-left: -50vw;
     margin-right: -50vw;
 }
-
