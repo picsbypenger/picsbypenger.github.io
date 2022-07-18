@@ -434,7 +434,7 @@ pre code {
     display: none;
 }
 
-@media screen and (min-width: 1240px) {
+@media (min-width: 1240px) {
     .narrownav {
         display: none;
     }
