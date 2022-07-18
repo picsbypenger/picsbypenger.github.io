@@ -24,13 +24,6 @@ title: people | picsbypenger
             display: table;
         }
 
-        body {
-            background-image: "ian1.jpg";
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
         .image1 {
             position: relative;
             top: 0;
@@ -42,23 +35,56 @@ title: people | picsbypenger
             top: 50%;
             right: 5%;
         }
+
+        .image3 {
+            position: relative;
+            float: right;
+            top: 0;
+            left: 0;
+            margin-bottom: .3em;
+        }
+
+        .image4 {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+
+        .full-width::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .caption {
+            position: absolute;
+            top: .1%;
+            left: 77%;
+            font-style: italic;
+            font-weight: normal;
+        }
     </style>
 </head>
 <div class="full-width">
     <img class="image1" src="/images/ian1.jpg" alt="portrait" style="width:75%">
+    <!-- <h2 class="caption">testingss testing testing testing</h2> -->
     <img class="image2" src="/images/ian2.jpg" alt="portrait" style="width:30%">
+</div>
+
+<div class="full-width">
+    <img class="image3" src="/images/pedro2.jpg" alt="portrait" style="width:75%">
+    
+    <img class="image4" src="/images/pedro1.jpg" alt="portrait" style="width:30%">
 </div>
 
 <div class="full-width">
     <div class="row">
         <div class="column">
-            <img src="/images/pedro1.jpg" alt="portrait" style="width:100%">
             <img src="/images/pragul1.jpg" alt="portrait" style="width:100%">
             <img src="/images/emily4.jpg" alt="portrait" style="width:100%">
             <img src="/images/louisa1.jpg" alt="portrait" style="width:100%">
         </div>
         <div class="column">
-            <img src="/images/pedro2.jpg" alt="portrait" style="width:100%">
             <img src="/images/jixi1.jpg" alt="portrait" style="width:100%">
             <img src="/images/emily1.jpg" alt="portrait" style="width:100%">
             <img src="/images/ana1.jpg" alt="portrait" style="width:100%">
