@@ -44,7 +44,7 @@ img {
     object-fit: cover;
 }
 
-/* .scroll {
+.scroll {
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -57,7 +57,7 @@ img {
 .fade {
     -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
     mask-image: linear-gradient(90deg, #000 80%, transparent);
-} */
+}
 
 .serif {
     font-family: var(--serif-font);
@@ -420,20 +420,25 @@ pre code {
     margin-right: -50vw;
 }
 
-@media screen and (max-width: 60em) {
-    #main-menu {
-        display: none;
-    }
-    #mobile-menu {
-        display: block:
-    }
+.widenav {
+    position: absolute;
+    top: 4.8em;
+    right: 5vw;
 }
 
-@media screen and (min-width: 60em) {
-    #main-menu {
-        display: block;
-    }
-    #mobile-menu {
+.narrownav {
+    padding-bottom: 0;
+}
+
+.widenav {
+    display: none;
+}
+
+@media screen and (min-width: 1240px) {
+    .narrownav {
         display: none;
+    }
+    .widenav {
+        display: block;
     }
 }
