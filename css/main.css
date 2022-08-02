@@ -457,6 +457,7 @@ ul.scroll {
 }
 
 .hgall {
-    width: auto;
+    object-fit: contain;
     height: 350px;
+    width: auto;
 }
