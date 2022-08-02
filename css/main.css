@@ -447,6 +447,10 @@ ul.scroll {
     padding-top: 6rem !important;
 }
 
+.mt-10 {
+    margin-top: 12rem;
+}
+
 .my-10 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -454,5 +458,5 @@ ul.scroll {
 
 .hgall {
     width: auto;
-    height: 250px;
+    height: 350px;
 }
