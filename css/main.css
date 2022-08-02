@@ -13,9 +13,8 @@
     --border: #D8DAE1;
     --accent: #999;
     --accent-light: #90CAF9;
-    --ahover: black;
+    --ahover: rgb(243, 219, 134);
     --code: #D81B60;
-    /* --albums-title-color: #97c599; */
 }
 
 
@@ -28,11 +27,10 @@
         --text: #ababab;
         --text-light: #808080;
         --border: #666;
-        --accent: #ffeea0d7;
+        --accent: #cfc5af;
         --accent-light: #ffeea0;
         --ahover: white;
         --code: #F06292;
-        /* --albums-title-color: #97c599; */
     }
 
     img {
@@ -47,6 +45,8 @@ img {
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -54,7 +54,7 @@ img {
     display: none;
 }
 
-.fade {
+.scrollfade {
     -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
     mask-image: linear-gradient(90deg, #000 80%, transparent);
 }
@@ -66,17 +66,18 @@ img {
 body {
     color: var(--text);
     background: var(--bg);
-    margin: 60px auto;
+    margin: 3% auto 60px;
     width: 85%;
 }
 
 nav ul,
 footer ul {
     font-family: var(--serif-font);
+    color: var(--accent);
     padding: 0px;
-    margin-top: 0;
     list-style: none;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 nav ul li,
@@ -114,6 +115,7 @@ h1 {
     font-family: var(--serif-font);
     font-size: clamp(2rem, 10vw, 5rem);
     margin-top:0;
+    font-weight: 700;
 }
 
 p {
@@ -124,8 +126,8 @@ p {
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    margin-top: 3em;
+    font-size: .6em;
 }
 
 ul.posts {
@@ -198,34 +200,6 @@ img+em {
     padding-bottom: 10px;
 }
 
-/* Format tables */
-table {
-    border-collapse: collapse;
-    width: 100%
-}
-
-td,
-th {
-    border: 1px solid var(--border);
-    text-align: left;
-    padding: .5rem;
-}
-
-th {
-    background: var(--accent-bg);
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    /* Set every other cell slightly darker. Improves readability. */
-    background: var(--accent-bg);
-}
-
-table caption {
-    font-weight: bold;
-    margin-bottom: .5rem;
-}
-
 /* Misc body elements */
 
 hr {
@@ -253,14 +227,6 @@ figcaption {
     color: var(--text-light);
     text-align: center;
     margin-bottom: 1rem;
-}
-
-blockquote {
-    margin: 2rem 0 2rem 2rem;
-    padding: .4rem .8rem;
-    border-left: .35rem solid var(--accent);
-    opacity: .8;
-    font-style: italic;
 }
 
 cite {
@@ -307,8 +273,8 @@ pre code {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5.5vw);
-    row-gap: .35%;
-    column-gap: .2%;
+    row-gap: .45%;
+    column-gap: .3%;
     margin-left: 0px;
 }
 
@@ -395,10 +361,6 @@ pre code {
     grid-row-end: 9;
 }
 
-.directoryimg {
-    margin-bottom: 4%;
-}
-
 .medium {
     font-family: var(--serif-font);
     font-style: italic;
@@ -420,25 +382,77 @@ pre code {
     margin-right: -50vw;
 }
 
+.widenav:hover {
+    border-color: var(--ahover);
+    transition: .4s;
+}
+
 .widenav {
-    position: absolute;
-    top: 4.8em;
-    right: 5vw;
+    position: fixed;
+    top: 5.8em;
+    right: 6.6vw;
+    display: none;
+    background-color: var(--bg);
+    padding: .4rem 0rem .4rem 1.2rem;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: var(--accent);
+}
+
+#pgtitle {
+    margin-top: 4em;
+}
+
+ul.scroll {
+    margin: .2rem;
 }
 
 .narrownav {
     padding-bottom: 0;
+    position: fixed;
+    top: 1em;
+    background-color: var(--bg);
 }
 
-.widenav {
-    display: none;
+@media screen and (min-width: 576px) {
+    .narrownav {
+        top: 2.5rem;
+        left: 6%;
+        padding: 0rem 0rem 0rem 1rem;
+        border-left-style: solid;
+        border-width: 2px;
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+
+    .narrownav:hover {
+        border-color: var(--ahover);
+        transition: .4s;
+    }
+
+    #pgtitle {
+        margin-top: 5.2em;
+    }
 }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1300px) {
     .narrownav {
         display: none;
     }
     .widenav {
         display: block;
     }
+    #pgtitle {
+        margin-top: 0;
+    }
 }
+
+.pt-10 {
+    padding-top: 6rem !important;
+}
+
+.my-10 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
