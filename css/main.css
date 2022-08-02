@@ -173,10 +173,6 @@ img {
     font-weight: bold;
 }
 
-article {
-    margin-bottom: 90px;
-}
-
 aside {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
@@ -382,21 +378,21 @@ pre code {
     margin-right: -50vw;
 }
 
-.widenav:hover {
-    border-color: var(--ahover);
-    transition: .4s;
-}
-
 .widenav {
     position: fixed;
     top: 5.8em;
     right: 6.6vw;
     display: none;
     background-color: var(--bg);
-    padding: .4rem 0rem .4rem 1.2rem;
+    padding: .4rem 0rem .2rem 1.2rem;
     border-right-style: solid;
     border-width: 2px;
     border-color: var(--accent);
+    transition: .4s;
+}
+
+.widenav:hover {
+    border-color: var(--ahover);
 }
 
 #pgtitle {
@@ -408,7 +404,7 @@ ul.scroll {
 }
 
 .narrownav {
-    padding-bottom: 0;
+    padding-bottom: .1em;
     position: fixed;
     top: 1em;
     background-color: var(--bg);
@@ -418,16 +414,16 @@ ul.scroll {
     .narrownav {
         top: 2.5rem;
         left: 6%;
-        padding: 0rem 0rem 0rem 1rem;
+        padding: 0rem 0rem .05rem 1rem;
         border-left-style: solid;
         border-width: 2px;
         border-color: var(--accent);
         color: var(--accent);
+        transition: .4s;
     }
 
     .narrownav:hover {
         border-color: var(--ahover);
-        transition: .4s;
     }
 
     #pgtitle {
@@ -456,3 +452,7 @@ ul.scroll {
     margin-bottom: 6rem;
 }
 
+.hgall {
+    width: auto;
+    height: 250px;
+}
