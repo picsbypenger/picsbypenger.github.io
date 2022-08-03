@@ -13,22 +13,28 @@
 </head>
 
 <body>
-    <nav class="navbar bg-white justify-content-start sticky-top">
-        <ul class="widenav">
-            <li><a href="/">home</a></li>
-            <li><a href="/people">people</a></li>
-            <li><a href="/sports">sports</a></li>
-            <li><a href="/events">events</a></li>
-            <li><a href="/editorial">editorial</a></li>
-            <li><a href="/scapes">scapes</a></li>
-            <li><a href="/designs">designs</a></li>
-        </ul>
+    <nav class="navbar bg-white justify-content-start sticky-top navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">home</a>
+                <a class="nav-link" href="/people">people</a>
+                <a class="nav-link" href="/sports">sports</a>
+                <a class="nav-link" href="/events">events</a>
+                <a class="nav-link" href="/editorial">editorial</a>
+                <a class="nav-link" href="/scapes">scapes</a>
+                <a class="nav-link" href="/designs">designs</a>
+            </div>
+        </div>
     </nav>
-    <div class="pb-4 my-3" id="pgtitle">
+    <div id="pgtitle">
         <h1 style="color:#729fbc">designs</h1>
     </div>
 
-    <div class="row">
+    <div class="row g-3">
         <div class="col-sm">
             <img src="../images/22bb.jpg" alt="team poster">
         </div>
@@ -36,7 +42,7 @@
             <img src="../images/22sb.jpg" alt="team poster">
         </div>
     </div>
-    <div class="row my-10">
+    <div class="row g-3 pt-3">
         <div class="col-sm">
             <img src="../images/22tf.jpg" alt="team poster">
         </div>
@@ -47,6 +53,9 @@
     <footer>
         <ul>Copyright © Derek Peng 2022</ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
