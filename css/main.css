@@ -432,3 +432,7 @@ ul.scroll {
     padding: .5em 0 1em 0;
 }
 
+img.portrait {
+    max-width: 50%;
+    height: auto;
+}
