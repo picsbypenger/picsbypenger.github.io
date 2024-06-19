@@ -4,26 +4,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>picsbypenger — people</title>
+    <title>people — derek peng</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href=" ../images/faviconcircle.png">
+    <link rel="shortcut icon" type="image/png" href=" ../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (min-width: 576px) {
+            img {
+                max-width: 30vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        img {
+            margin: 0 auto 2%;
+        }
+
+        
+    </style>
 </head>
 
 <body>
-    <nav class="navbar bg-white justify-content-start sticky-top navbar-expand-md">
+    <nav class="navbar bg-white sticky-top navbar-expand-sm justify-content-center">
+        <!-- <a class="navbar-brand" href="#">people</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" href="/">home</a>
-                <a class="nav-link" href="/people">people</a>
+                <a style="color:#c35858" class="nav-link" href="/people">people</a>
                 <a class="nav-link" href="/sports">sports</a>
-                <a class="nav-link" href="/info">info</a>
+                <a class="nav-link" href="/about">about</a>
                 <!-- <a class="nav-link" href="/events">events</a> -->
                 <!-- <a class="nav-link" href="/editorial">editorial</a> -->
                 <!-- <a class="nav-link" href="/scapes">scapes</a> -->
@@ -32,90 +51,42 @@
         </div>
     </nav>
 
-    <div id="pgtitle">
-        <h1 style="color:#D19C97">people</h1>
+    <div id="pgtitle" class="d-flex justify-content-center">
+        <h1 style="color:#c35858">people</h1>
     </div>
 
-    <div class="row g-3">
-        <div class="col-sm">
-            <img src=" ../images/ellis.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/ellis3.jpg" alt="portrait">
-        </div>
-    </div>
-
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
+    <div class="row">
+        <div class="col-sm left">
             <img src=" ../images/katz2.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/katz1.jpg" alt="portrait">
-        </div>
-    </div>
-
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
-            <img src=" ../images/coye1.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/patel1.jpg" alt="portrait">
-        </div>
-    </div>
-
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
-            <img src=" ../images/dth1.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/dth2.jpg" alt="portrait">
-        </div>
-    </div>
-
-
-
-    <!-- <div class="row g-3 pt-5">
-        <div class="col-sm">
-            <img src=" ../images/ian1.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/ian2.jpg" alt="portrait">
-        </div>
-    </div> -->
-
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
-            <img src=" ../images/pedro1.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/pedro2.jpg" alt="portrait">
-        </div>
-    </div>
-
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
+            <img src=" ../images/ellis2.jpg" alt="portrait">
+            <img src=" ../images/port1.jpg" alt="portrait">
+            <img src=" ../images/dth3.jpg" alt="portrait">
+            <img src=" ../images/port6.jpg" alt="portrait">
+            <img src=" ../images/port7.jpg" alt="portrait">
             <img src=" ../images/li1.jpg" alt="portrait">
-        </div>
-        <div class="col-sm">
-            <img src=" ../images/jixi1.jpg" alt="portrait">
-        </div>
-    </div>
 
-    <div class="row g-3 pt-3">
-        <div class="col-sm">
-            <img src=" ../images/best1.jpg" alt="portrait">
         </div>
-        <div class="col-sm">
-            <img src=" ../images/best3.jpg" alt="portrait">
+        <div class="col-sm right">
+            <img src=" ../images/port3.jpg" alt="portrait">
+            <img src=" ../images/dth4.jpg" alt="portrait">
+            <img src=" ../images/port2.jpg" alt="portrait">
+            <img src=" ../images/port4.jpg" alt="portrait">
+            <img src=" ../images/port5.jpg" alt="portrait">
+            <img src=" ../images/port9.jpg" alt="portrait">
+            <img src=" ../images/coye1.jpg" alt="portrait">
+            <img src=" ../images/pedro1.jpg" alt="portrait">
         </div>
     </div>
 
     <footer>
-        <ul>Copyright © Derek Peng 2024</ul>
+        <div class="d-flex justify-content-center">
+            <ul style="padding: 0 5% 0">
+                <li><a href="https://www.instagram.com/picsbypenger" class="fa fa-lg fa-instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/derekepeng" class="fa fa-lg fa-linkedin"></a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
