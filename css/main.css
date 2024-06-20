@@ -363,12 +363,14 @@ ul.scroll {
     padding: .5em 0 1em 0;
 }
 
-.left * {
-    margin-left: auto;
-    margin-right: 0;
-}
+@media (min-width: 576px) {
+    .left * {
+        margin-left: 10vw;
+        margin-right: 0;
+    }
 
-.right * {
-    margin-left: 0;
-    margin-right: auto;
+    .right * {
+        margin-left: 0;
+        margin-right: 10vw;
+    }
 }
