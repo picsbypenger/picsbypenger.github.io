@@ -353,12 +353,6 @@ ul.scroll {
     margin-bottom: 6rem;
 }
 
-.hgall {
-    object-fit: contain;
-    height: 350px;
-    width: auto;
-}
-
 #pgtitle {
     padding: .5em 0 1em 0;
 }
