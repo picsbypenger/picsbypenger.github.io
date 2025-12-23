@@ -368,3 +368,9 @@ ul.scroll {
         margin-right: 10vw;
     }
 }
+
+.container {
+    display: block;
+  columns: 20rem; 
+  column-gap: 1rem;
+}
