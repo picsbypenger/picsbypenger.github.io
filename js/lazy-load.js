@@ -49,4 +49,20 @@ document.addEventListener("DOMContentLoaded", function() {
         if (img) loadImage(img);
     });
   }
+
+  // --- Image Protection ---
+  // Disable right-click on images
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG' || e.target.closest('figure')) {
+        e.preventDefault();
+    }
+  }, false);
+
+  // Disable dragging of images
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG' || e.target.closest('figure')) {
+        e.preventDefault();
+    }
+  }, false);
+
 });
