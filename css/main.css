@@ -3,7 +3,7 @@
 :root {
     /* Set sans-serif & mono fonts */
     --sans-font: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, sans-serif;
-    --serif-font: Georgia, "Times New Roman", Times, serif;
+    --serif-font: Georgia, "Times New Roman", Times, serif;;
     --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     /* Default (light) theme */
     --bg: #fff;
@@ -11,9 +11,9 @@
     --text: #212121;
     --text-light: #666;
     --border: #D8DAE1;
-    --accent: #999;
+    --accent: #464646;
     --accent-light: #90CAF9;
-    --ahover: rgb(226, 201, 108);
+    --ahover: #c35858;
     --code: #D81B60;
 }
 
@@ -78,14 +78,15 @@ body {
     color: var(--text);
     background: var(--bg);
     font-family: var(--serif-font);
-
-    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1% auto;
     width: 95%;
     max-width: none;
 }
 
-nav ul,
-footer ul {
+nav ul {
     font-family: var(--serif-font);
     color: var(--accent);
     padding: 0px;
@@ -94,10 +95,14 @@ footer ul {
     margin-bottom: 0;
 }
 
-nav ul li,
-footer ul li {
+nav ul li {
     display: inline;
-    margin: 0 2vw 0;
+    margin: 0 0 0 0;
+}
+
+footer ul li{
+    display: inline;
+    margin: 0px 20px;
 }
 
 a {
@@ -212,7 +217,7 @@ mark {
 
 main img {
     max-width: 100%;
-    border-radius: 3px;
+    border-radius: 0px;
 }
 
 /* Responsive Masonry Grid */
@@ -220,8 +225,9 @@ main.container {
     max-width: 100%; /* Override Bootstrap's stepped max-widths */
     padding-left: 0; /* Optional: remove Bootstrap padding if desired, or keep it */
     padding-right: 0;
+    margin-top: 2em;
     column-count: 3;
-    column-gap: 0.75rem;
+    column-gap: .75rem;
 }
 
 @media (max-width: 1100px) {
@@ -347,7 +353,7 @@ div.col-imgs * {
 }
 
 .navbar-nav {
-    margin: .5em 0;
+    margin: 0 0;
 }
 
 /* nav {
@@ -362,13 +368,17 @@ div.col-imgs * {
 
 .nav-link {
     /* font-size: small; */
-    padding: 0;
-    margin: 0 10px 0;
+    font-weight: normal;
+    color: var(--accent);
+    padding: 0 0 0 0px;
+    margin: 0 0 0 20px;
 }
 
 .navbar-brand {
-    font-size: 1em;
-    color: #c35858
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--accent);
+    margin: 0 0 0 8px;
 }
 
 @media (max-width: 575px) {
@@ -415,4 +425,18 @@ ul.scroll {
         margin-left: 0;
         margin-right: 10vw;
     }
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.home {
+    margin: 2em 1em 0 1em;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
 }
