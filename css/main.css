@@ -225,7 +225,7 @@ main.container {
     max-width: 100%; /* Override Bootstrap's stepped max-widths */
     padding-left: 0; /* Optional: remove Bootstrap padding if desired, or keep it */
     padding-right: 0;
-    margin-top: 2em;
+    margin-top: .5em;
     column-count: 3;
     column-gap: .75rem;
 }
@@ -345,6 +345,8 @@ div.col-imgs * {
 
 /* Nav */
 .navbar {
+    /* margin-left: .2rem;
+    margin-right: .2rem; */
     font-family: var(--serif-font);
     color: var(--accent);
     padding: 0px;
@@ -375,10 +377,10 @@ div.col-imgs * {
 }
 
 .navbar-brand {
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
     font-weight: bold;
     color: var(--accent);
-    margin: 0 0 0 8px;
+    margin: 0 0 0 0;
 }
 
 @media (max-width: 575px) {
