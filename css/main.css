@@ -1,6 +1,7 @@
 /* Set the global variables for everything. Change these to use your own fonts/colours. */
 
 :root {
+    color-scheme: light;
     --nav-content-inset: .5rem;
     /* Set sans-serif & mono fonts */
     --sans-font: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, sans-serif;
@@ -21,18 +22,29 @@
 
 /* Dark theme */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --bg: #212121;
-        --accent-bg: #2b2b2b;
-        --text: #ababab;
-        --text-light: #808080;
-        --border: #666;
-        --accent: #cfc5af;
-        --accent-light: #e2ce74;
-        --ahover: white;
-        --code: #F06292;
-    } */
+        color-scheme: dark;
+        /* Neutral surfaces let the photographs' colors stand out. */
+        --bg: #141414;
+        --accent-bg: #1e1e1e;
+        --text: #dededb;
+        --text-light: #a6a6a3;
+        --border: #414141;
+        --accent: #bdbdb8;
+        --accent-light: #493033;
+        --ahover: #e29b96;
+        --code: #e4a4bc;
+    }
+
+    .navbar {
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23bdbdb8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    aside {
+        border-left-color: var(--ahover);
+    }
+}
 
 img {
     width: 100%;
@@ -200,7 +212,7 @@ aside {
 
 img+em {
     font-style: italic;
-    color: #999;
+    color: var(--text-light);
 }
 
 /* Misc body elements */
@@ -213,6 +225,7 @@ hr {
 
 mark {
     padding: 3px 6px;
+    color: var(--text);
     background: var(--accent-light);
 }
 
@@ -247,7 +260,7 @@ figure {
     margin: 0 0 0.5rem 0;
     display: block;
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: var(--accent-bg);
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
     position: relative;
@@ -346,6 +359,13 @@ div.col-imgs * {
 
 /* Nav */
 .navbar {
+    background-color: var(--bg);
+    --bs-navbar-color: var(--accent);
+    --bs-navbar-hover-color: var(--ahover);
+    --bs-navbar-active-color: var(--text);
+    --bs-navbar-brand-color: var(--text);
+    --bs-navbar-brand-hover-color: var(--ahover);
+    --bs-navbar-toggler-color: var(--text);
     /* Span the screen while keeping content aligned with the page. */
     width: calc(100% + 5vw);
     margin-left: -2.5vw;
@@ -384,6 +404,11 @@ div.col-imgs * {
     font-weight: bold;
     color: var(--accent);
     margin: 0 0 0 var(--nav-content-inset);
+}
+
+.navbar .nav-link[aria-current="page"] {
+    color: var(--text);
+    text-decoration: underline;
 }
 
 @media (min-width: 576px) {
