@@ -385,9 +385,16 @@ div.col-imgs * {
     margin: 0 0 0 .5em;
 }
 
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-nav .nav-link:last-child {
+        /* Match the brand's .5em left margin at its 1.25rem font size. */
+        padding-right: .625rem;
+    }
+}
+
 @media (max-width: 575.98px) {
     .navbar .navbar-toggler {
-        padding-right: .5rem;
+        padding-right: .625rem;
     }
 
     .navbar .navbar-nav {
@@ -411,7 +418,7 @@ div.col-imgs * {
         text-align: start;
         /* Brand margin: .5em at Bootstrap's 1.25rem brand font size. */
         padding-left: calc(2.5vw + .2rem + .625rem);
-        padding-right: calc(2.5vw + .2rem + .5rem);
+        padding-right: calc(2.5vw + .2rem + .625rem);
     }
 }
 
