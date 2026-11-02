@@ -345,11 +345,13 @@ div.col-imgs * {
 
 /* Nav */
 .navbar {
-    margin-left: .2rem;
-    margin-right: .2rem;
+    /* Span the screen while keeping content aligned with the page. */
+    width: calc(100% + 5vw);
+    margin-left: -2.5vw;
+    margin-right: -2.5vw;
     font-family: var(--serif-font);
     color: var(--accent);
-    padding: 0px;
+    padding: 0 calc(2.5vw + .2rem);
     list-style: none;
     font-weight: normal;
 }
@@ -403,9 +405,8 @@ div.col-imgs * {
     .navbar .navbar-collapse {
         position: absolute;
         top: 100%;
-        /* Include the body's outer gutters and the navbar's side margins. */
-        left: calc(-2.5vw - .2rem);
-        right: calc(-2.5vw - .2rem);
+        left: 0;
+        right: 0;
         background: var(--bg);
         text-align: start;
         /* Brand margin: .5em at Bootstrap's 1.25rem brand font size. */
