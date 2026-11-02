@@ -395,14 +395,22 @@ div.col-imgs * {
         padding-bottom: 1rem;
     }
 
+    .navbar .nav-link {
+        margin-left: 0;
+        line-height: 2;
+    }
+
     .navbar .navbar-collapse {
         position: absolute;
         top: 100%;
-        left: 0;
-        right: 0;
+        /* Include the body's outer gutters and the navbar's side margins. */
+        left: calc(-2.5vw - .2rem);
+        right: calc(-2.5vw - .2rem);
         background: var(--bg);
-        text-align: end;
-        padding-right: .5rem;
+        text-align: start;
+        /* Brand margin: .5em at Bootstrap's 1.25rem brand font size. */
+        padding-left: calc(2.5vw + .2rem + .625rem);
+        padding-right: calc(2.5vw + .2rem + .5rem);
     }
 }
 
